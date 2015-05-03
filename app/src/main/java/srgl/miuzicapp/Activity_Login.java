@@ -1,38 +1,43 @@
 package srgl.miuzicapp;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 
+public class Activity_Login extends ActionBarActivity implements TextWatcher{
 
-public class Activity_Login extends ActionBarActivity {
+    private EditText email, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //Hacemos referencia
+        email = (EditText) findViewById(R.id.editText_login_email);
+        password = (EditText) findViewById(R.id.editText_login_password);
+
+        //Agregamos escuchadores
+        email.addTextChangedListener(this);
+        password.addTextChangedListener(this);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_activity__login, menu);
-        return true;
-    }
+    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    @Override
+    public void afterTextChanged(Editable s) {
+
+        if(s.toString().length() > 0) {
+            email.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+        } else {
+            //Assign your image again to the view, otherwise it will always be gone even if the text is 0 again.
+            email.setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_login_email, 0, 0, 0);
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }

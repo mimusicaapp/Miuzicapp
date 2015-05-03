@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,12 +6,39 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     android:background="@drawable/background_login"
-    tools:context="srgl.miuzicapp.Activity_Login">
+    android:id="@+id/raiz_linear_login"
+    android:gravity="center"
+    tools:context="srgl.miuzicapp.Activity_Login" >
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/editText_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/backgrund_textfield_login"
+        android:padding="10dp"
+        android:typeface="monospace"
+        android:hint="Email"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@mipmap/ic_login_email" />
+
+    <EditText
+        android:id="@+id/editText_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/backgrund_textfield_login"
+        android:padding="10dp"
+        android:typeface="monospace"
+        android:hint="*******"
+        android:drawableLeft="@mipmap/ic_login_password" />
+
+
+</LinearLayout>
