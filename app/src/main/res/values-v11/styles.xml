@@ -6,4 +6,9 @@
         <item name="windowActionBar">false</item> <!-- For 2.x version  -->
     </style>
 
+    <!-- Tema Barra de Acciones -->
+    <style name="TemaMiuzicappActionBar" parent="@style/Theme.AppCompat.Light">
+
+    </style>
+
 </resources>

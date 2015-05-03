@@ -1,5 +1,9 @@
 <resources>
 
     <string name="app_name">MiuZicApp</string>
+    <string name="title_activity_activity__login">Activity_Login</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
