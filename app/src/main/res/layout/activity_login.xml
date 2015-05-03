@@ -31,14 +31,23 @@
         android:id="@+id/editText_login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
         android:ems="10"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/backgrund_textfield_login"
         android:padding="10dp"
         android:typeface="monospace"
         android:hint="*******"
-        android:drawableLeft="@mipmap/ic_login_password" />
+        android:drawableLeft="@mipmap/ic_login_password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"/>
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/button_login_botonIniciarSesion"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp" />
 
 </LinearLayout>

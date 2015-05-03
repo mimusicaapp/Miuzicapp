@@ -35,9 +35,11 @@ public class Activity_Login extends ActionBarActivity implements TextWatcher{
 
         if(s.toString().length() > 0) {
             email.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+            password.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
         } else {
-            //Assign your image again to the view, otherwise it will always be gone even if the text is 0 again.
+            //Asignar la imagen nuevamente a la vista, o cuando la cantidad de caracteres sea igual a 0
             email.setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_login_email, 0, 0, 0);
+            password.setCompoundDrawablesWithIntrinsicBounds(R.mipmap.ic_login_password, 0, 0, 0);
         }
     }
 }
