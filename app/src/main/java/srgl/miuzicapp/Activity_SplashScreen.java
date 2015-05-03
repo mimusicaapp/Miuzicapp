@@ -50,7 +50,6 @@ public class Activity_SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Agregar contenido del layout de esta actividad
         setContentView(R.layout.activity_splash_screen);
 
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
