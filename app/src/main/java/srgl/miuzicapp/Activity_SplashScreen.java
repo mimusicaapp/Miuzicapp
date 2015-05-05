@@ -23,7 +23,7 @@ public class Activity_SplashScreen extends ActionBarActivity {
             }
         };
         Timer tiempo = new Timer();
-        tiempo.schedule(tarea, 3000);
+        tiempo.schedule(tarea, 5000);
 
     }
 

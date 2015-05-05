@@ -13,25 +13,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.5"
+        android:layout_weight="3"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_weight="8"
+            android:layout_weight="7"
             android:src="@drawable/logo_sombreado"
             android:padding="5dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:text="miuzicapp"
+            android:layout_weight="3"
+            android:text="MiuZiKapp"
             android:layout_gravity="center"
-            android:textColor="@color/clouds"
+            android:textColor="@color/black_overlay"
             android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:textSize="30sp"/>
 
     </LinearLayout>
 
@@ -72,7 +72,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Entrar"
             android:id="@+id/button_login_botonIniciarSesion"
             android:background="@drawable/selector_button_login"
             android:textColor="@color/clouds"
@@ -91,13 +91,13 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:layout_marginRight="10dp"
-                android:background="@android:color/darker_gray"/>
+                android:background="@color/silver"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="O"
-                android:textColor="@android:color/darker_gray"/>
+                android:textColor="@color/silver"/>
 
             <View
                 android:layout_width="0dp"
@@ -105,7 +105,7 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:background="@android:color/darker_gray"/>
+                android:background="@color/silver"/>
 
         </LinearLayout>
 
@@ -132,12 +132,12 @@
             android:layout_gravity="center"
             android:background="@android:color/transparent"
             android:layout_marginRight="5dp"
-            android:textColor="@color/clouds"/>
+            android:textColor="@color/asbestos"/>
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"/>
+            android:background="@color/silver"/>
 
         <Button
             android:layout_width="0dp"
@@ -147,7 +147,7 @@
             android:layout_gravity="center"
             android:background="@android:color/transparent"
             android:layout_marginLeft="5dp"
-            android:textColor="@color/clouds"/>
+            android:textColor="@color/asbestos"/>
 
     </LinearLayout>
 
