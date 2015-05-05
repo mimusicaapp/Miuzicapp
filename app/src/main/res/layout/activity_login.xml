@@ -1,7 +1,5 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:fb="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -10,18 +8,35 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@drawable/background_linear_login"
     android:id="@+id/raiz_linear_login"
-    tools:context="srgl.miuzicapp.Activity_Login"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.5">
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:src="@drawable/logo_sombreado"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="miuzicapp"
+            android:layout_gravity="center"
+            android:textColor="@color/clouds"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
     <LinearLayout
-
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
@@ -34,7 +49,7 @@
             android:inputType="textEmailAddress"
             android:ems="10"
             android:background="@drawable/backgrund_textfield_login"
-            android:padding="5dp"
+            android:padding="3dp"
             android:typeface="monospace"
             android:hint="Email"
             android:layout_marginBottom="10dp"
@@ -46,7 +61,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:background="@drawable/backgrund_textfield_login"
-            android:padding="5dp"
+            android:padding="3dp"
             android:typeface="monospace"
             android:hint="*******"
             android:drawableLeft="@mipmap/ic_login_password"
@@ -59,13 +74,11 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/button_login_botonIniciarSesion"
-            android:padding="10dp"
             android:background="@drawable/selector_button_login"
             android:textColor="@color/clouds"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,10 +113,8 @@
             android:id="@+id/login_button_facebook"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            fb:login_text="@string/loginFacebookButton"
-            fb:logout_text="Conectate con Facebook"
-            style="@style/FacebookLoginButton" />
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
